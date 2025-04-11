@@ -6,8 +6,7 @@ import io
 beverages=pd.DataFrame(
     {'beverage':['orange juice','Expresso','Tea'],
      'price':[2.5,2.0,3.0]
-    
-     })
+         })
      
 food_items=pd.DataFrame(
     {'food_item':['cookie juice','chocolatione','muffin'],
@@ -19,6 +18,14 @@ SELECT * FROM beverages
 CROSS JOIN food_items"""
 
 solution=db.sql(answer)
+
+with st.sidebar:
+    option = st.selectbox(
+    "What would you like to review",
+    ("Joins", "GroupBy", "Windows Functions"),
+    index=False,
+    placeholder="Select a theme..."),
+    st.write("You selected:", option)
 
 st.header("entrée votre code")
 query=st.text_area(label='vôtre code SQL est ici', key='user_input')
