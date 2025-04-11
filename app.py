@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 import duckdb as db
 
-df=pd.DataFrame({'a':[10,23,54,17],'b':[1,7,9,14]})
+df=pd.DataFrame({'a':[10,23,54,17],'b':[1,7,9,18]})
 
 st.write("""
         # SQL SRS
