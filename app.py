@@ -1,7 +1,6 @@
 import streamlit as st 
 import pandas as pd 
 import duckdb as db
-import io
 
 beverages=pd.DataFrame(
     {'beverage':['orange juice','Expresso','Tea'],
