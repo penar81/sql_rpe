@@ -9,7 +9,14 @@ st.write("""
          Spaced repetition System SQL practice
          """)
 
-st.write("You selected:", option)
+with st.sidebar:
+    option = st.selectbox(
+    "What would you like to review",
+    ("Joins", "GroupBy", "Windows Functions"),
+    index=False,
+    placeholder="Select a theme..."),
+    st.write("You selected:", option)
+    
 
 tab1,tab2,tab3 = st.tabs(["cat","dog","owl"])
 
