@@ -8,7 +8,7 @@ beverages=pd.DataFrame(
          })
      
 food_items=pd.DataFrame(
-    {'food_item':['cookie juice','chocolatione','muffin'],
+    {'food_item':['cookie juice','chocolatine','muffin'],
      'food_price':[2.5,2.0,3.0]
      })
 
